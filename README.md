@@ -16,6 +16,7 @@ Python (pandas, numpy) — data cleaning, merging, RFM calculation, cohort analy
 Matplotlib / Seaborn — visualization
 
 Google Colab — environment
+
 -----------------------------------------------------------------------------------
 
 ## Methodology
