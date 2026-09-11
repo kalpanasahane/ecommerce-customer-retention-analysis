@@ -1,16 +1,23 @@
 E-Commerce Customer Segmentation & Retention Analysis (RFM + Cohort Analysis)
 --------------------------------------------------------------------------------------
-Business Question
-Which customers matter most to the business, and how well is the business retaining customers over time? This project answers that using RFM segmentation (who are our best/at-risk/lost customers, today) and Cohort/Retention analysis (are we keeping customers over time, and where exactly are we losing them).
+
+This project analyzes real e-commerce order data to find out who a business's best customers are and how well it keeps them over time. Using RFM (Recency, Frequency, Monetary) segmentation and cohort retention analysis, it found that 97% of customers buy only once and retention drops below 1% within a month — but the few repeat customers spend 5x more on average. The analysis recommends focusing on getting customers to buy a second time within their first 30 days, rather than just acquiring new customers.
+
 ------------------------------------------------------------------------------------
+
 Dataset
 Brazilian E-Commerce Public Dataset by Olist — ~100k real orders placed on the Olist marketplace between 2016 and 2018.
+
 --------------------------------------------------------------------------------------
 Tools Used
+
 Python (pandas, numpy) — data cleaning, merging, RFM calculation, cohort analysis
+
 Matplotlib / Seaborn — visualization
+
 Google Colab — environment
 -----------------------------------------------------------------------------------
+
 ## Methodology
 - Combined 4 raw data files (orders, order items, payments, customers) into one single table, matching them by order ID and customer ID
 - Kept only delivered orders — removed cancelled/unavailable ones since they weren't real sales
@@ -26,6 +33,7 @@ Google Colab — environment
 - Tracked customers by the month they first purchased (their "cohort"), then checked how many kept buying in the following months
 - Turned the results into percentages so different-sized groups could be compared fairly
 - Built charts to show the patterns clearly — customer segments, revenue by segment, and a retention heatmap over time
+- 
 
 --------------------------------------------------------------------------------
 
